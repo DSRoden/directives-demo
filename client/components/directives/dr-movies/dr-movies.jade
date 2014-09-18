@@ -5,4 +5,6 @@ div {{movie.mpaa_rating}}
 div {{movie.runtime}}
 div {{movie.ratings.critics_rating}}
 ul
-  li(ng-repeat='cast in movie.abridged_cast') {{cast.name}}
+  li(ng-repeat='cast in movie.abridged_cast') {{cast.name}})
+
+button(ng-click='remove()') Remove

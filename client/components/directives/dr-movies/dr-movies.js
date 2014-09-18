@@ -11,12 +11,12 @@
 
     return {info:info};
   }])
-  .directive('cmMovie', [function(){
+  .directive('drMovie', [function(){
     var o = {};
 
     o.restrict    = 'A';
     o.templateUrl = '/components/directives/dr-movies/dr-movies.html';
-    o.scope       = {title:'@'};
+    o.scope       = {title:'@', remove:'&'};
     o.link        = function(scope, element, attrs){
                     };
 
@@ -25,7 +25,7 @@
                         $scope.movie = response.data.movies[0];
                         $scope.poster = $scope.movie.posters.thumbnail.replace(/_tmb/, '_pos');
                       });
-                    };
+                    }];
 
     return o;
   }]);

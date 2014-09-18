@@ -1,4 +1,16 @@
 h4 Directives
+
+div(dr-locate)
+br
+br
+
+input(type='text', ng-model='title')
+button(ng-click='addMovie()') Add Movie
+
+div
+
+div(dr-movie, ng-repeat='title in titles', title='{{title}}', remove='delMovie($index)')
+
 div(ng-repeat='peep in people', dr-greeting, name='{{peep.name}}', age='{{peep.age}}')
 
 div(dr-clock, frequency='2000')
@@ -8,11 +20,10 @@ div(dr-clock, frequency='25')
 
 div(ng-repeat='symbol in symbols', dr-stock, symbol='{{symbol}}')
 
+div(dr-weather)
 div(dr-weather, zip='37064')
+div(dr-weather, zip='12494')
 
-div(cm-movie, title='Harry Potter')
-div(cm-movie, title='Pulp Fiction')
-div(cm-movie, title='Home Alone')
 
 
 
