@@ -1,14 +1,19 @@
 doctype html
-html(ng-app='mean-template', lang='en')
+html(ng-app='directives-demo', lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title MEAN Template
+    title Directives-Demo
     link(href='/vendor/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
     link(href='/vendor/fontawesome/css/font-awesome.css', rel='stylesheet')
     link(href='/vendor/toastr/toastr.css', rel='stylesheet')
     link(href='/index.css', rel='stylesheet')
+    link(href='/components/directives/dr-greeting/dr-greeting.css', rel='stylesheet')
+    link(href='/components/directives/dr-clock/dr-clock.css', rel='stylesheet')
+    link(href='/components/directives/dr-stock/dr-stock.css', rel='stylesheet')
+    link(href='/components/directives/dr-weather/dr-weather.css', rel='stylesheet')
+    link(href='/components/directives/dr-movies/dr-movies.css', rel='stylesheet')
   body
     include nav
     .container
@@ -34,4 +39,9 @@ html(ng-app='mean-template', lang='en')
     script(src='/components/factories/home.js')
     script(src='/components/factories/user.js')
     script(src='/components/factories/http-interceptor.js')
+    script(src='/components/directives/dr-greeting/dr-greeting.js')
+    script(src='/components/directives/dr-clock/dr-clock.js')
+    script(src='/components/directives/dr-stock/dr-stock.js')
+    script(src='/components/directives/dr-weather/dr-weather.js')
+    script(src='/components/directives/dr-movies/dr-movies.js')
 

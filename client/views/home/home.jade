@@ -1,4 +1,18 @@
-h3 The MEAN Stack
-ul(ng-show='mean')
-  li(ng-repeat='technology in mean') {{technology}}
+h4 Directives
+div(ng-repeat='peep in people', dr-greeting, name='{{peep.name}}', age='{{peep.age}}')
+
+div(dr-clock, frequency='2000')
+div(dr-clock, frequency='1000')
+div(dr-clock, frequency='500')
+div(dr-clock, frequency='25')
+
+div(ng-repeat='symbol in symbols', dr-stock, symbol='{{symbol}}')
+
+div(dr-weather, zip='37064')
+
+div(cm-movie, title='Harry Potter')
+div(cm-movie, title='Pulp Fiction')
+div(cm-movie, title='Home Alone')
+
+
 
