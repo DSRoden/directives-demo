@@ -4,11 +4,11 @@
   angular.module('directives-demo')
   .factory('Home', ['$http', function($http){
 
-    function getMessage(){
-      return $http.get('/home');
+    function travel(city){
+      return $http.post('/city', {city: city});
     }
 
-    return {getMessage:getMessage};
+    return {travel:travel};
   }]);
 })();
 

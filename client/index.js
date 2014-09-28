@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('directives-demo', ['ngRoute', 'LocalForageModule', 'drGreetingModule', 'drClockModule', 'drStockModule', 'drWeatherModule', 'drMovieModule', 'drLocateModule'])
+  angular.module('directives-demo', ['ngRoute', 'LocalForageModule', 'drGreetingModule', 'drClockModule', 'drStockModule', 'drWeatherModule', 'drMovieModule', 'drLocateModule', 'drWikiSherpaModule'])
   .config(['$routeProvider', '$httpProvider', '$localForageProvider', function($routeProvider, $httpProvider, $localForageProvider){
     $routeProvider
     .when('/', {templateUrl:'/views/home/home.html', controller:'HomeCtrl'})
@@ -14,4 +14,6 @@
     $localForageProvider.config({name:'directives-demo', storeName:'cache', version:1.0});
   }]);
 })();
+
+
 

@@ -30,6 +30,7 @@ module.exports = function(app, express){
   app.use(security.bounce);
   app.post('/movies', movies.create);
   app.post('/delmovies', movies.destroy);
+  app.post('/city', home.findCity);
 
   console.log('Express: Routes Loaded');
 };
